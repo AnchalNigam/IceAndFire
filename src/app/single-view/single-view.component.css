@@ -1,0 +1,49 @@
+/* .single-topadjust{
+    margin-top:10vmin;
+   }
+   @media (max-width:300px){
+       .single-topadjust{
+            margin-top:40vmin;
+           }
+           
+   }
+   @media (min-width:300px) and (max-width:1199px){
+       .single-topadjust{
+            margin-top:25vmin;
+           }
+           
+   } */
+   .match-logo{
+    width:9vmin;
+    height:6vmin;
+}
+   .match-heading{
+    font-size:3.3vmin;
+    font-family:impact;
+    color:#4E4E50;
+}
+
+  /*  #mytable > table.table td {
+      padding-left:15vmin;
+  } */
+  #name-adjust{
+    padding-left:15vmin;
+    padding-right:15vmin;
+    width:30%;
+  }
+  
+   .heading-singlematch{
+      font-size:2.9vmin;
+      color:rgb(7, 46, 78);
+      font-family:garamond;
+      font-weight:bold;
+  }
+   .value-singlematch{
+       font-size:2.7vmin;
+     
+       font-family:cursive;
+  }
+  #back-button{
+      
+      cursor:pointer;
+  }

@@ -1,0 +1,15 @@
+#set{
+    /* margin-left:3vmin; */
+    margin:0 auto;
+    text-align:center
+}
+.color-adjust{
+    color:white;
+    font-family:garamond;
+
+}
+#label-set{
+    color:#008B8B;
+    font-family:garamond;
+    font-weight:bold;
+}

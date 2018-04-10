@@ -1,0 +1,382 @@
+<div class="container">
+  <div *ngIf="book.length!=0">
+    <div class="row ">
+      <div class="col-7 col-lg-8">
+
+      </div>
+      <div class="col-5 col-lg-4">
+
+        <span class="match-heading">
+          <img src="assets/book.png" class="match-logo  rounded circle mr-2">BOOK</span>
+      </div>
+
+    </div>
+    <div class="row mt-4 mb-5">
+      <div class="col-12 col-lg-12 " id="mytable">
+
+        <table class="table table-responsive table-hover">
+
+          <tbody>
+
+            <tr *ngIf="checkValue(book.name)">
+
+              <td class=" heading-singlematch" id="name-adjust">Book Name</td>
+              <td class=" text-info value-singlematch">{{book.name}}</td>
+
+            </tr>
+
+
+            <tr *ngIf="checkValue(book.authors)">
+
+              <td class="heading-singlematch" id="name-adjust">Author(s)</td>
+              <td>
+                <span class="text-info value-singlematch">{{book.authors.toString()}}</span>
+              </td>
+
+            </tr>
+
+
+            <tr *ngIf="checkValue(book.publisher)">
+              <td class="heading-singlematch" id="name-adjust">Publisher</td>
+              <td>
+                <span class="text-info value-singlematch">{{book.publisher}}</span>
+              </td>
+
+            </tr>
+
+            <tr *ngIf="checkValue(book.country)">
+              <td class="heading-singlematch" id="name-adjust">Country</td>
+              <td>
+                <span class="text-info value-singlematch">{{book.country}}</span>
+              </td>
+
+            </tr>
+
+            <tr *ngIf="checkValue(book.mediaType)">
+              <td class="heading-singlematch" id="name-adjust">Media Type</td>
+              <td>
+                <span class="text-info value-singlematch">{{book.mediaType}}</span>
+              </td>
+
+            </tr>
+
+
+            <tr>
+              <td class="heading-singlematch" id="name-adjust">Released Date</td>
+              <td>
+                <span class="text-info value-singlematch">{{book.released | date}}</span>
+              </td>
+
+            </tr>
+
+
+            <tr *ngIf="checkValue(book.isbn)">
+              <td class="heading-singlematch" id="name-adjust">Isbn</td>
+              <td>
+                <span class="text-info value-singlematch">{{book.isbn}}</span>
+              </td>
+
+            </tr>
+
+
+            <tr>
+              <td class="heading-singlematch" id="name-adjust">Pages</td>
+              <td>
+                <span class="text-info value-singlematch">{{book.numberOfPages}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(book.characters)">
+              <td class="heading-singlematch" id="name-adjust">Characters</td>
+              <td>
+                <span class="text-info value-singlematch">{{book.characters.toString()}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(book.povCharacters)">
+              <td class="heading-singlematch" id="name-adjust">PovCharacters</td>
+              <td>
+                <span class="text-info value-singlematch">{{book.povCharacters.toString()}}</span>
+              </td>
+
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <!--COLUMN END-->
+    </div>
+    <!--ROW END-->
+  </div>
+  <!-- Book section end -->
+
+  <div *ngIf="house.length!=0">
+    <div class="row ">
+      <div class="col-7 col-lg-8">
+
+      </div>
+      <div class="col-5 col-lg-4">
+
+        <span class="match-heading">
+          <img src="assets/house.jpg" class="match-logo rounded circle mr-2">HOUSE</span>
+      </div>
+
+    </div>
+    <div class="row mt-4 mb-5">
+      <div class="col-12" id="mytable">
+
+        <table class="table table-responsive table-hover">
+
+          <tbody>
+
+            <tr *ngIf="checkValue(house.name)">
+
+              <td class=" heading-singlematch" id="name-adjust">Name</td>
+
+              <td class="text-success value-singlematch">{{house.name}}</td>
+
+            </tr>
+
+            <tr *ngIf="checkValue(house.region)">
+
+              <td class="heading-singlematch" id="name-adjust">Region</td>
+              <td>
+                <span class="text-success value-singlematch">{{house.region}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(house.coatOfArms)">
+              <td class="heading-singlematch" id="name-adjust">Coat Of Arms</td>
+              <td>
+                <span class="text-success value-singlematch">{{house.coatOfArms}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(house.words)">
+              <td class="heading-singlematch" id="name-adjust">Words</td>
+              <td>
+                <span class="text-success value-singlematch">{{house.words}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(house.titles)">
+              <td class="heading-singlematch" id="name-adjust">Titles</td>
+              <td>
+                <span class="text-success value-singlematch">{{house.titles.toString()}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(house.seats)">
+              <td class="heading-singlematch" id="name-adjust">Seats</td>
+              <td>
+                <span class="text-success value-singlematch">{{house.seats.toString()}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(house.currentLord)">
+              <td class="heading-singlematch" id="name-adjust">Current Lord</td>
+              <td>
+                <span class="text-success value-singlematch">{{house.currentLord}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(house.heir)">
+              <td class="heading-singlematch" id="name-adjust">Heir</td>
+              <td>
+                <span class="text-success value-singlematch">{{house.heir}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(house.overlord)">
+              <td class="heading-singlematch" id="name-adjust">OverLord</td>
+              <td>
+                <span class="text-success value-singlematch">{{house.overlord}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(house.founded)">
+              <td class="heading-singlematch" id="name-adjust">Founded</td>
+              <td>
+                <span class="text-success value-singlematch">{{house.founded}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(house.founder)">
+              <td class="heading-singlematch" id="name-adjust">Founder</td>
+              <td>
+                <span class="text-success value-singlematch">{{house.founder}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(house.diedOut)">
+              <td class="heading-singlematch" id="name-adjust">DiedOut</td>
+              <td>
+                <span class="text-success value-singlematch">{{house.diedOut}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(house.ancestralWeapons)">
+              <td class="heading-singlematch" id="name-adjust">Ancestral Weapons</td>
+              <td>
+                <span class="text-success value-singlematch">{{house.ancestralWeapons.toString()}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(house.cadetBranches)">
+              <td class="heading-singlematch" id="name-adjust">Cadet Branches</td>
+              <td>
+                <span class="text-success value-singlematch">{{house.cadetBranches.toString()}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(house.swornMembers)">
+              <td class="heading-singlematch" id="name-adjust">Sworn Members</td>
+              <td>
+                <span class="text-success value-singlematch">{{house.swornMembers.toString()}}</span>
+              </td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--COLUMN END-->
+    </div>
+    <!--ROW END-->
+  </div>
+  <!-- House section end -->
+
+  <div *ngIf="character.length!=0">
+    <div class="row ">
+      <div class="col-7 col-lg-8">
+
+      </div>
+      <div class="col-5 col-lg-4">
+
+        <span class="match-heading">
+          <img src="assets/char.png" class="match-logo rounded circle mr-2">CHARACTER</span>
+      </div>
+
+    </div>
+    <div class="row mt-4 mb-5">
+      <div class="col-12 col-lg-12" id="mytable">
+
+        <table class="table table-responsive table-hover">
+
+          <tbody>
+            <tr *ngIf="checkValue(character.name)">
+
+              <td class="heading-singlematch" id="name-adjust">Name</td>
+              <td class="text-success value-singlematch">{{character.name}}</td>
+
+            </tr>
+            <tr *ngIf="checkValue(character.gender)">
+
+              <td class="heading-singlematch" id="name-adjust">Gender</td>
+              <td>
+                <span class="text-success value-singlematch">{{character.gender}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(character.culture)">
+              <td class="heading-singlematch" id="name-adjust">Culture</td>
+              <td>
+                <span class="text-success value-singlematch">{{character.culture}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(character.born)">
+              <td class="heading-singlematch" id="name-adjust">Born</td>
+              <td>
+                <span class="text-success value-singlematch">{{character.born}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(character.died)">
+              <td class="heading-singlematch" id="name-adjust">Died</td>
+              <td>
+                <span class="text-success value-singlematch">{{character.died}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(character.titles)">
+              <td class="heading-singlematch" id="name-adjust">Title</td>
+              <td>
+                <span class="text-success value-singlematch">{{character.titles.toString()}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(character.aliases)">
+              <td class="heading-singlematch" id="name-adjust">Aliases</td>
+              <td>
+                <span class="text-success value-singlematch">{{character.aliases.toString()}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(character.father)">
+              <td class="heading-singlematch" id="name-adjust">Father</td>
+              <td>
+                <span class="text-success value-singlematch">{{character.father}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(character.mother)">
+              <td class="heading-singlematch" id="name-adjust">Mother</td>
+              <td>
+                <span class="text-success value-singlematch">{{character.mother}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(character.spouse)">
+              <td class="heading-singlematch" id="name-adjust">Spouse</td>
+              <td>
+                <span class="text-success value-singlematch">{{charater.spouse}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(character.allegiances)">
+              <td class="heading-singlematch" id="name-adjust">Allegiances</td>
+              <td>
+                <span class="text-success value-singlematch">{{character.allegiances.toString()}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(character.books)">
+              <td class="heading-singlematch" id="name-adjust">Books</td>
+              <td>
+                <span class="text-success value-singlematch">{{character.books.toString()}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(character.povBooks)">
+              <td class="heading-singlematch" id="name-adjust">Pov Books</td>
+              <td>
+                <span class="text-success value-singlematch">{{character.povBooks.toString()}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(character.playedBy)">
+              <td class="heading-singlematch" id="name-adjust">Played By</td>
+              <td>
+                <span class="text-success value-singlematch">{{character.playedBy.toString()}}</span>
+              </td>
+
+            </tr>
+            <tr *ngIf="checkValue(character.tvSeries)">
+              <td class="heading-singlematch" id="name-adjust">TvSeries</td>
+              <td>
+                <span class="text-success value-singlematch">{{character.tvSeries.toString()}}</span>
+              </td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--COLUMN END-->
+    </div>
+    <!--ROW END-->
+  </div>
+  <!-- House section end -->
+  
+  <a class="btn btn-secondary btn-lg border float-right " id="back-button" (click)="goBack()" >Go Back</a>
+</div>
+<!--CONTAINER END-->
