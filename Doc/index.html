@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from chatapi.edwisor.com/eventDoc/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 May 2018 07:42:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Documentation</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/materialize.min.css">
+    <!-- <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+    <style>
+    /* Custom Stylesheet */
+
+    .icon-block {
+        padding: 0 15px;
+    }
+
+    .icon-block .material-icons {
+        font-size: inherit;
+    }
+    </style>
+</head>
+
+<body>
+   
+    <div class="section no-pad-bot" style="margin-bottom: 0px" id="index-banner">
+        <div class="container" style="width: 80%">
+          <p style="font-size: 2em; font-weight: 540; text-align: center">IceAndFire App Documentation</p>
+            <div class="row">
+
+                <div class="col hide-on-small-only m3 l2">
+                    <ul class="section table-of-contents" style="position: fixed">
+                        <li><a href="#url" style="color: #03a9f4; font-size: 1.2em; font-weight: bold">Urls</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#books">Books</a></li>
+						 <li><a href="#houses">Houses</a></li>
+                      
+                        <li><a href="#characters">Characters</a></li>
+                      
+                    
+                    </ul>
+                </div>
+
+                <div class="col s12 m9 l10">
+
+                    <div id="url" class="section scrollspy"></div>
+                    <h4>IceAndFire App Urls</h4>
+
+                    <div id="home" class="section scrollspy">
+                        <h5>Home</h5><p>http://iceandfire.webdeveloperjourney.xyz/home</p>
+                        This url gives list of categories like houses,books,characters with pagination.It is also having filters like filter by name,
+						filter by category and filter by order.<br/>
+                    </div>
+                    <div id="books" class="section scrollspy">
+                       <h5>Book</h5><p>http://iceandfire.webdeveloperjourney.xyz/view/books/:booknumber</p>
+                        This url gives details of book and booknumber is route parameter which user will choose in home page.Whatever book user chooses, 
+						frontend will render that book info in detail.
+                    </div>
+					 <div id="houses" class="section scrollspy">
+                         <h5>House</h5><p>http://iceandfire.webdeveloperjourney.xyz/view/houses/:housenumber</p>
+                        This url gives details of house and housenumber is route parameter which user will choose in home page.Whatever house user chooses, 
+						frontend will render that house info in detail.
+                    </div>
+                 
+                    <div id="characters" class="section scrollspy">
+                         <h5>Character</h5><p>http://iceandfire.webdeveloperjourney.xyz/view/charaters/:charnumber</p>
+                        This url gives details of character and charnumber is route parameter which user will choose in home page.Whatever character user chooses, 
+						frontend will render that character info in detail.
+                    </div>
+
+                  
+
+                </div>
+            </div>
+        </div>
+    </div>
+<br/><br/><br/><br/>
+        <footer style="background-color: black; min-height: 3em">
+            <center style="color: white; margin: auto; padding-top: 1em;">COPYRIGHT &copy<span>2018</span> Anchal Nigam</center>
+        </footer>
+    <!--  Scripts-->
+    <script src="../../assets/js/jquery-2.1.1.min.js"></script>
+    <script src="../../assets/js/materialize.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.scrollspy').scrollSpy();
+    });
+    </script>
+    <script>
+    (function($) {
+        $(function() {
+
+            $('.button-collapse').sideNav();
+
+        }); // end of document ready
+    })(jQuery); // end of jQuery name space
+    </script>
+</body>
+
+
+<!-- Mirrored from chatapi.edwisor.com/eventDoc/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 May 2018 07:42:06 GMT -->
+</html>
