@@ -5,7 +5,6 @@ It also gives feature of filter like you can search on the basis of books,charac
 
 Language:HTML, CSS, Bootstrap4, Angular 5.
 
-Live Link: http://iceandfire.webdeveloperjourney.xyz/home"
 
 Screenshots:
 
